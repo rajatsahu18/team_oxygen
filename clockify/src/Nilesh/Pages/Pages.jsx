@@ -1,6 +1,8 @@
 import React from "react";
+import { RoutesF } from "../Footer/RoutesF";
 import { FifthPage } from "../HomePage/FifthPart";
 import { FourthPart } from "../HomePage/FourthPart";
+
 import { SecondPart } from "../HomePage/SecondPart";
 import { SeventhPart } from "../HomePage/SeventhPart";
 import { SeventhPart1 } from "../HomePage/SeventhPart1";
@@ -57,10 +59,13 @@ function Page() {
       <br />
       <br />
 
+      <RoutesF />
       
+ 
     </div>
     <div>
-        
+    <br />
+      <br />
     </div>
   </div>
   );
