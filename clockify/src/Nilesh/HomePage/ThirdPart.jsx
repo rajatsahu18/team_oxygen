@@ -1,18 +1,19 @@
 import React from "react";
-import { Seconpartsc } from "./Homecss";
+import { SECONDPARTSC} from "./Homecss";
 
 function Thirdpart() {
   return (
     <div>
-      <div>
+      <div >
         <img
           src="https://clockify.me/assets/images/customers-light-gray-3.svg"
           alt=""
         />
-        <Seconpartsc
+        <SECONDPARTSC
           src="https://clockify.me/assets/images/time-tracker-screenshot.svg"
           alt=""
         />
+        
       </div>
     </div>
   );

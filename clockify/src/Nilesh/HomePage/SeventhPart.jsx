@@ -3,20 +3,34 @@ import { SECONDPAGE_HOME_H1, SECONDPAGE_HOME_H2, SECONDPAGE_HOME_BUTTON1 } from 
 
 
 
-function SecondPart() {
+function SeventhPart() {
     return (
-        <div>
+      
+        <div style={{marginTop:"650px"}}>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+
             <SECONDPAGE_HOME_H1>
-                The most popular free time tracker for teams
+                Start tracking time with Clockify
       </SECONDPAGE_HOME_H1>
-            <SECONDPAGE_HOME_H2>
-                Time tracking software used by millions. Clockify is a simple time
-        <br />
-        tracker and timesheet app that lets you and your team track work <br />
-        hours across projects. Unlimited users, free forever.
+            <SECONDPAGE_HOME_H2 style={{fontSize:"15px", fontFamily:""
+}}>
+                Unlimited users
+
+                •
+
+                Cancel anytime
+
+                •
+
+                Free forever
       </SECONDPAGE_HOME_H2>
             <SECONDPAGE_HOME_BUTTON1>
-                START TRACING TIME-IT'S FREE!
+                CREATE FREE ACCOUNT
       </SECONDPAGE_HOME_BUTTON1>
             <br />
             <br />
@@ -30,8 +44,8 @@ function SecondPart() {
                 />
         103,466 people signed up last month
       </a>
-      </div>     
-  );
+        </div>
+    );
 }
 
-export { SecondPart};
+export { SeventhPart };
