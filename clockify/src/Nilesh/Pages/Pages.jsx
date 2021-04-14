@@ -1,11 +1,22 @@
-import React from 'react'
+import React from "react";
+import { SecondPart } from "../HomePage/SecondPart";
+import { Thirdpart } from "../HomePage/ThirdPart";
+import { Routes } from "../Navbar/Routes";
 
-const Pages = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+
+function Page() {
+  return (
+    <div>
+      <Routes />
+      <br />
+      <SecondPart />
+      <br />
+      <br />
+      <br />
+
+      <Thirdpart />
+    </div>
+  );
 }
+export { Page };
 
-export default Pages
