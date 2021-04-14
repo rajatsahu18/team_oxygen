@@ -54,9 +54,10 @@ function SeventhPart1() {
                     )}
 
                 </div>
+
             </div>
-
-
+            
+                
         </div>
     )
 }

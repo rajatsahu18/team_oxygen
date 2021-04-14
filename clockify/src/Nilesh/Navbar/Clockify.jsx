@@ -1,7 +1,7 @@
 import React from "react";
 
 function Clockify() {
-  return <div>Home</div>;
+  return <div></div>;
 }
 
 export { Clockify };
