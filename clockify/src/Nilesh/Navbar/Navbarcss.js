@@ -34,6 +34,7 @@ export const Plinthird = styled.a`
 export const Plinkone = styled.p`
   margin-top: 41px;
   color: #5a6b7b;
+  font-size: 14.4px;
   &:hover {
     color: #03a9f4;
   }

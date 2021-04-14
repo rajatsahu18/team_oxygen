@@ -27,3 +27,28 @@ export const Secondpage_Home_Button1 = styled.button`
     background-color: #0277bd;
   }
 `;
+
+
+// Fifthpage cssssss ******
+
+
+export const FIFTH_HOME_H3ONE = styled.h3`
+  font-size:16px;
+  color: #3D4853;
+  margin-right:350px;
+`
+
+
+export const FIFTH_HOME_H4ONE = styled.h4`
+  font-size:18px;
+   color: #5A6B7B;
+   margin-right:350px;
+  
+`
+
+
+export const FIFTH_HOME_AINH4 = styled.a`
+  font-size:18px;
+   color: #03a9f4;
+`
+

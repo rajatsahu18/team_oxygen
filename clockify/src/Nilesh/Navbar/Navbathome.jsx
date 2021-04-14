@@ -42,7 +42,7 @@ function Navbarhome() {
             marginLeft: "5%"
           }}
         >
-          <Plinkone>Feature</Plinkone>
+          <Plinkone>DOWNLOAD</Plinkone>
         </Link>
 
         <Link
