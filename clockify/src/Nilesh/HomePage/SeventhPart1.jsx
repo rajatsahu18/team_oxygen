@@ -10,7 +10,7 @@ function SeventhPart1() {
     const getdata = ()=> {
   
     axios
-    .get(`http://localhost:3004/todo`)
+    .get(`https://json-server-mocker-pooran.herokuapp.com/divdata`)
     .then((res) => {
       console.log(res);
 
@@ -43,7 +43,7 @@ function SeventhPart1() {
                 <div>
                     {data?.map((item)=>
                     <SEVENTHPART1_DATA >
-                        <div style={{marginLeft:"5px"}}>
+                        <div style={{marginLeft:"10px"}}>
                             <h3 style={{fontSize:"13px",color:" #3D4853",marginRight:"80px"}}>{item.titile}</h3>
                             <h4 style={{fontSize:"16px",marginRight:"80px"}}>{item.img}</h4>
                             <p style={{fontSize:"13px",color:"#718191",fontWeight:"bold"}}>{item.desc}</p>
@@ -53,6 +53,10 @@ function SeventhPart1() {
                     
                     )}
 
+                </div>
+                <div>
+                    <img src=""alt=""/>
+                    
                 </div>
 
             </div>

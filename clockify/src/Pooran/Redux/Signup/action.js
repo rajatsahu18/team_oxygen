@@ -37,6 +37,7 @@ export const signupuser = (payload) => (dispatch) => {
             }
             axios(config).then(res => {
                 dispatch(signupsuccess(res.data));
+                alert("You Have Successfully Signed Up")
             }).catch(err => {
                 dispatch(signupfailed(err));
             })
@@ -47,6 +48,7 @@ export const signupuser = (payload) => (dispatch) => {
             if (check === true) {
                 alert("User Already Register");
             }
+            
             else if (check === false) {
                 dispatch(signuprequest());
                 const config = {
@@ -65,6 +67,7 @@ export const signupuser = (payload) => (dispatch) => {
                 }
                 axios(config).then(res => {
                     dispatch(signupsuccess(res.data));
+                    alert("You Have Successfully Signed Up")
                 }).catch(err => {
                     dispatch(signupfailed(err));
                 })

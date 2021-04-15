@@ -1,13 +1,14 @@
 import React from 'react'
-import { DownloadData } from '../DownloadData'
-import { DownloadText } from '../DownloadText'
+import { AppAlignment } from '../../../Nilesh/Navbar/Navbarcss'
+import { DownloadData } from './DownloadData'
+import { DownloadText } from './DownloadText'
 
 const Download = () => {
     return (
-        <div>
+        <AppAlignment>
             <DownloadText/>
             <DownloadData/>
-        </div>
+        </AppAlignment>
     )
 }
 

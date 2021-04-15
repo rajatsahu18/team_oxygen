@@ -83,10 +83,10 @@ export const SEVENTHPART1_DATA = styled.div`
 
 float: left ;
 border:2px solid whitesmoke;
-width: 240px ;
+width: 260px ;
  height: 162px ;
-padding: 2px ;
-margin-Left: 5px ;
+padding: 3px ;
+margin-Left: 15px ;
 background-color: #FFFFFF;
 &:hover {
     transform: scale(1.1); 

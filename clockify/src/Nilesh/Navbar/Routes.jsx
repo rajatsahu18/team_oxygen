@@ -1,8 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Clockify } from "./Clockify";
-import { Downloads } from "./Downloads";
-import { Features } from "./Features";
+import {FeaturesPage} from "./FeaturesPage"
+
+import {DownloadsPage} from "./DownloadsPage"
 import { Login } from "./Login";
 import { Navbarhome } from "./Navbathome";
 
@@ -11,16 +12,19 @@ import { Signup } from "./Signup";
 function Routes() {
   return (
     <div>
-      <Navbarhome />
+  
       <Switch>
         <Route exact path="/">
+        <Navbarhome />
           <Clockify />
         </Route>
         <Route exact path="/features">
-          <Features />
+        <Navbarhome />
+          <FeaturesPage />
         </Route>
         <Route exact path="/downloads">
-          <Downloads />
+        <Navbarhome />
+          <DownloadsPage />
         </Route>
         <Route exact path="/login">
           <Login />

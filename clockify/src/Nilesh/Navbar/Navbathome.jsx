@@ -25,6 +25,7 @@ function Navbarhome() {
           <img
             src="https://clockify.me/assets/images/clockify-logo.svg"
             alt=""
+            style={{height:"40PX",marginTop:"-5PX"}}
           />
         </Link>
 
@@ -32,7 +33,7 @@ function Navbarhome() {
           to={`/features`}
           style={{ textDecoration: "none", marginLeft: "5%" }}
         >
-          <Plinkone>Feature</Plinkone>
+          <Plinkone>FEATURE</Plinkone>
         </Link>
 
         <Link

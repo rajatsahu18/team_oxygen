@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+
+export const AppAlignment = styled.div`
+  text-align: center;
+`
+
+
 export const Maindivline = styled.div`
   display: flex;
   margin-left: 5%;
@@ -34,7 +40,7 @@ export const Plinthird = styled.a`
 export const Plinkone = styled.p`
   margin-top: 41px;
   color: #5a6b7b;
-  font-size: 14.4px;
+  font-size: 15.8px;
   &:hover {
     color: #03a9f4;
   }
@@ -43,7 +49,7 @@ export const Plinkone = styled.p`
 export const Plinksecond = styled.p`
   margin-top: 41px;
   color: #5a6b7b;
-  font-size: 14.4px;
+  font-size: 15.8px;
   &:hover {
     color: #03a9f4;
   }

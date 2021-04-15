@@ -1,23 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { SECONDPAGE_HOME_H1, SECONDPAGE_HOME_H2, SECONDPAGE_HOME_BUTTON1 } from "./Homecss"
 
 
 
 function SeventhPart() {
     return (
-      
-        <div style={{marginTop:"650px"}}>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-             
+
+        <div style={{ marginTop: "750px" }}>
+            <br />
+            <br />
+            <br />
+            <br />
+
 
             <SECONDPAGE_HOME_H1>
                 Start tracking time with Clockify
       </SECONDPAGE_HOME_H1>
-            <SECONDPAGE_HOME_H2 style={{fontSize:"15px", fontFamily:""
-}}>
+            <SECONDPAGE_HOME_H2 style={{
+                fontSize: "15px", fontFamily: ""
+            }}>
                 Unlimited users
 
                 •
@@ -28,9 +30,13 @@ function SeventhPart() {
 
                 Free forever
       </SECONDPAGE_HOME_H2>
-            <SECONDPAGE_HOME_BUTTON1>
-                CREATE FREE ACCOUNT
+
+            <Link to={`/signup`} style={{ textDecoration: "none" }}>
+                <SECONDPAGE_HOME_BUTTON1>
+                    CREATE FREE ACCOUNT
       </SECONDPAGE_HOME_BUTTON1>
+            </Link>
+
             <br />
             <br />
             <a
