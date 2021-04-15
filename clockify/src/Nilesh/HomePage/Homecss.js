@@ -48,7 +48,20 @@ export const Signbutt2 = styled.button`
     }
   }
 `;
+export const DarkmodeButton = styled.button`
+border-color: #03a9f4;
+border: 1px solid #03a9f4;
+background-color: #f8fdff;
+width: 5%;
+color: #03a9f4;
+&:hover {
+  background-color: #03a9f4;
+  color: white;
+  .Plinthird {
+    color: white;
+  }
 
+`
 
 
 // Fifthpage cssssss ******
