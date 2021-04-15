@@ -13,7 +13,6 @@ function SeventhPart() {
             <br />
             <br />
 
-
             <SECONDPAGE_HOME_H1>
                 Start tracking time with Clockify
       </SECONDPAGE_HOME_H1>

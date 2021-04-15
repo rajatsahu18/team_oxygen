@@ -6,14 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import {store} from "./Pooran/Redux/store"
+import { ThemeContextProvider } from './LoginNavbar/Context/ThemeContextProvider';
 
 ReactDOM.render(
   <React.StrictMode>
+    <ThemeContextProvider>
     <Provider store={store}>
     <BrowserRouter>
     <App />
     </BrowserRouter>
     </Provider>
+    </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
