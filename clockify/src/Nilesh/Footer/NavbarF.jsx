@@ -7,7 +7,7 @@ import { FOOTER_HOME_H3F, Plinkone2 } from "./FooterCss"
 
 function NavbarF() {
     return (
-        <div style={{ backgroundColor: "white" }}>
+        <div style={{ backgroundColor: "#FFFFFF" }}>
 
             <div style={{ display: "flex" }}>
                 <div style={{ marginLeft: "15%" }}>
@@ -38,27 +38,25 @@ function NavbarF() {
                     </div>
 
                     <div>
-
-                        <Link to={`/features`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Features</Plinkone2>
-                        </Link>
+                    <Link to={`/features`} style={{ textDecoration: "none" }}>
+                        <Plinkone2>Features</Plinkone2>
+                    </Link>
                     </div>
                     <div>
-                        <Link to={`/downloads`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Download</Plinkone2>
-                        </Link>
-                    </div>
-
-                    <div>
-                        <Link to={`/intergrations`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Integration</Plinkone2>
-                        </Link >
+                    <Link to={`/downloads`} style={{ textDecoration: "none" }}>
+                        <Plinkone2>Download</Plinkone2>
+                     </Link>
                     </div>
 
                     <div>
-                        <Link to={`/extras`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Extras</Plinkone2>
-                        </Link>
+
+                        <Plinkone2>Integration</Plinkone2>
+
+                    </div>
+
+                    <div>
+                        <Plinkone2>Extras</Plinkone2>
+
                     </div>
 
                 </div>
@@ -68,28 +66,27 @@ function NavbarF() {
                     </div>
 
                     <div>
-                        <Link to={`/timeclock`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Time Clock</Plinkone2>
-                        </Link>
-                    </div>
+                        <Plinkone2>Time Clock</Plinkone2>
 
-                    <div>
-                        <Link to={`/timesheet`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>TimeSheet</Plinkone2>
-                        </Link>
                     </div>
 
                     <div>
 
-                        <Link to={`/timecalculator`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Time Calculator</Plinkone2>
-                        </Link >
+                        <Plinkone2>TimeSheet</Plinkone2>
+
                     </div>
 
                     <div>
-                        <Link to={`/selfhoisting`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Self-hoisting</Plinkone2>
-                        </Link>
+
+
+                        <Plinkone2>Time Calculator</Plinkone2>
+
+                    </div>
+
+                    <div>
+
+                        <Plinkone2>Self-hoisting</Plinkone2>
+
 
                     </div>
 
@@ -101,28 +98,27 @@ function NavbarF() {
                     </div>
 
                     <div>
-                        <Link to={`/aboutus`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>About Us</Plinkone2>
-                        </Link>
+
+                        <Plinkone2>About Us</Plinkone2>
+
                     </div>
                     <div>
-                        <Link to={`/Customers`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Customer</Plinkone2>
-                        </Link>
-                    </div>
 
-                    <div>
+                        <Plinkone2>Customer</Plinkone2>
 
-                        <Link to={`/resources`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Resources</Plinkone2>
-                        </Link >
                     </div>
 
                     <div>
 
-                        <Link to={`/blog`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Blog</Plinkone2>
-                        </Link>
+                        <Plinkone2>Resources</Plinkone2>
+
+                    </div>
+
+                    <div>
+
+
+                        <Plinkone2>Blog</Plinkone2>
+
                     </div>
 
 
@@ -134,35 +130,35 @@ function NavbarF() {
                     </div>
 
                     <div>
-                        <Link to={`/help`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Help</Plinkone2>
-                        </Link>
+
+                        <Plinkone2>Help</Plinkone2>
+
                     </div>
 
                     <div>
 
-                        <Link to={`/tutorials`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Tutorials</Plinkone2>
-                        </Link>
+
+                        <Plinkone2>Tutorials</Plinkone2>
+
                     </div>
 
                     <div>
-                        <Link to={`/api`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Api</Plinkone2>
-                        </Link>
+
+                        <Plinkone2>Api</Plinkone2>
+
                     </div>
 
                     <div>
-                        <Link to={`/contact`} style={{ textDecoration: "none" }}>
-                            <Plinkone2>Contact</Plinkone2>
-                        </Link >
+
+                        <Plinkone2>Contact</Plinkone2>
+
                     </div>
 
                 </div>
-                
+
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <LastPart />
         </div>
 

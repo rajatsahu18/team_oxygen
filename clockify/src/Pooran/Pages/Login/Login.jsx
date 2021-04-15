@@ -52,7 +52,9 @@ if(loginLoading){
         <>
             <LoginNavdiv>
                 <LoginNavdivLogoDiv>
+                <Link to={`/`} style={{ textDecoration: "none" }}>
                     <img src="https://clockify.me/assets/images/logo.svg" alt="Clockify Logo" style={{ width: "60%", height: "100%", margin: "5% 0% 0% 30%" }} />
+                    </Link>
                 </LoginNavdivLogoDiv>
                 <LoginNavdivLogoDiv>
 
@@ -64,7 +66,9 @@ if(loginLoading){
                     <h1 style={{ fontSize: "1.3vw", margin: "17% 0% 0% 32%", color: "grey" }}>Dont have an Account?</h1>
                 </LoginNavdivLogoDiv>
                 <LoginNavdivLogoDiv>
-                    <h1 style={{ fontSize: "1.8vw", margin: "15% 0% 0% 0%" }}><Link style={{ textDecoration: "none", color: "#5bc7f7" }}>Sign Up</Link></h1>
+            
+                    <h1 style={{ fontSize: "1.8vw", margin: "15% 0% 0% 0%" }}><Link to={`/signup`}   style={{ textDecoration: "none", color: "#5bc7f7" }}>Sign Up</Link></h1>
+                    
                 </LoginNavdivLogoDiv>
             </LoginNavdiv>
             <Loginformdiv>

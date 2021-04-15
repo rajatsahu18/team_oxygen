@@ -17,7 +17,7 @@ function Page() {
   return (
   <div>
         <div>
-      <Routes />
+  
       <br />
       <SecondPart />
       <br />
@@ -52,16 +52,12 @@ function Page() {
       <br />
       <br />
       <br />
-
-
       < SeventhPart />
       <br />
       <br />
       <br />
-
       <RoutesF />
       
- 
     </div>
     <div>
     <br />

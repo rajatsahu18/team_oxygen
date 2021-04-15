@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { Signupformdiv, SignupNavdiv, SignupNavdivLogoDiv } from "./Signupcss";
 import {v4 as uuid} from 'uuid'
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
@@ -14,7 +14,8 @@ const signupinput ={
 
 export const SignupPage = () => {
 const dispatch = useDispatch();
-const {signupLoading} = useSelector(state=>state.signup, shallowEqual);
+const {signupLoading, signupAuth} = useSelector(state=>state.signup, shallowEqual);
+
 const [query,setquery] = React.useState(signupinput);
 const handlechange = (e)=>{
     const {name,value,type,checked} = e.target;
@@ -65,11 +66,13 @@ const handlesignup = ()=>{
 if(signupLoading){
     return <Loader/>
 }
-    return  (
+    return !signupAuth ? (
         <>
             <SignupNavdiv>
                 <SignupNavdivLogoDiv>
+                <Link to={`/`} style={{ textDecoration: "none" }}>
                     <img src="https://clockify.me/assets/images/logo.svg" alt="Clockify Logo" style={{ width: "60%", height: "100%", margin: "5% 0% 0% 30%" }} />
+                    </Link>
                 </SignupNavdivLogoDiv>
                 <SignupNavdivLogoDiv>
 
@@ -81,7 +84,9 @@ if(signupLoading){
 
                 </SignupNavdivLogoDiv>
                 <SignupNavdivLogoDiv>
-                    <h1 style={{ fontSize: "1.8vw", margin: "15% 0% 0% 40%" }}><Link style={{ textDecoration: "none", color: "#5bc7f7" }}>Log In</Link></h1>
+            
+                    <h1 style={{ fontSize: "1.8vw", margin: "15% 0% 0% 40%" }}><Link  to={`/login`} style={{ textDecoration: "none", color: "#5bc7f7" }}>Log In</Link></h1>
+                    
                 </SignupNavdivLogoDiv>
             </SignupNavdiv>
             <div style={{ margin: "2% 0% 0% 0%" }}>
@@ -129,5 +134,5 @@ if(signupLoading){
                 </div>
             </Signupformdiv>
         </>
-    )
+    ) : <Redirect  to= "/login" push/>
 }

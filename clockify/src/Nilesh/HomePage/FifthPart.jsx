@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { FIFTH_HOME_H3ONE, FIFTH_HOME_H4ONE, FIFTH_HOME_AINH4, SECONDPAGE_HOME_BUTTON1 } from "./Homecss"
 
 
@@ -62,9 +63,14 @@ function FifthPage() {
             </div>
 
             <br />  <br />  <br /><br />
+
+            <Link to={`/features`} style={{ textDecoration: "none" }}>
             <SECONDPAGE_HOME_BUTTON1>
+                
                 SEE ALL FEATURES
             </SECONDPAGE_HOME_BUTTON1>
+                    </Link>
+  
         </div>
     )
 }

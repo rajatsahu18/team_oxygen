@@ -1,17 +1,18 @@
 
 import './App.css';
-import { Page } from './Nilesh/Pages/Pages';
-import { Loader } from './Pooran/Pages/Loader/Loader';
-import { LoginPage } from './Pooran/Pages/Login/Login';
-import { SignupPage } from './Pooran/Pages/Signup/Signup';
+import {  RoutesF} from './Nilesh/Footer/RoutesF';
+import { Routes } from './Nilesh/Navbar/Routes';
+
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Page/> */}
-      <LoginPage/>
-      {/* <SignupPage/> */}
+       
+         <Routes/>
+
+        
+
     </div>
   );
 }
