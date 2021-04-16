@@ -1,36 +1,86 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { VscThreeBars } from "react-icons/vsc";
-
+import { BsFillBellFill, BsQuestionCircle } from "react-icons/bs";
 
 import "./LoginNavbar.css";
 import { SideBarData } from "./SideBarData";
-import { Navbarlogin, Signbutt, Plinthird } from "./Navbar2css";
+import { Navbarlogin, SignbuttLogin } from "./Navbar2css";
 import { Themecontext } from "../Context/ThemeContextProvider";
 
 function LoginNavbar22() {
+  var obj12 = {
+    optionsd: ""
+  };
+
+  const [query, setquery] = useState(obj12);
+
+  const { optionsd } = query;
+
+  const handlechange = (e) => {
+    const { name, value } = e.target;
+
+    setquery({ ...query, [name]: value });
+  };
+
   const [sidebar, setSidebar] = useState(false);
 
-  const { theme, toogleTheme, currentTheme } = useContext(Themecontext);
+  const { theme, toogleTheme } = useContext(Themecontext);
   const showsidebar = () => {
     setSidebar(!sidebar);
   };
+
+  const depts = [
+    {
+      value: "",
+      name: "Dark"
+    },
+    {
+      value: "LOGOUT",
+      name: "Logout"
+    }
+  ];
+
   return (
     <div>
-      <Navbarlogin style={{ background: theme.bodyBackgroung }}>
+      <Navbarlogin
+        style={{ background: theme.bodyBackgroung, color: theme.color }}
+      >
         <Link to="#" className="menu-bars">
           <VscThreeBars size="30px" onClick={showsidebar} />
         </Link>
-
         <img
           src="https://clockify.me/assets/images/clockify-logo.svg"
           alt=""
-          style={{ height: "30PX", marginTop: "3PX" }}
+          style={{ height: "30PX", marginTop: "3PX", marginLeft: "10px" }}
         />
-
-        <button onClick={toogleTheme}>
-          {currentTheme === "light" ? "DARK" : "LIGHT"}
-        </button>
+        <SignbuttLogin
+          style={{ marginLeft: "64%", background: theme.bodyBackgroung }}
+        >
+          Upgrade
+        </SignbuttLogin>
+        <BsFillBellFill
+          style={{ marginLeft: "20px", color: theme.color }}
+        ></BsFillBellFill>
+        <BsQuestionCircle style={{ marginLeft: "20px", color: theme.color }} />
+        <div style={{ marginLeft: "20px" }}></div>
+        <img
+          src="https://www.twenty10.org.au/wp-content/uploads/2018/06/avatar-1577909_640.png"
+          alt=""
+          style={{ height: "25px", borderRadius: "15px" }}
+        />
+        <div style={{ marginLeft: "5px" }}>
+          <select
+            onClick={toogleTheme}
+            value={optionsd}
+            name="optionsd"
+            onChange={handlechange}
+          >
+            {depts.map((de) => (
+              <option key={de.value}>{de.name}</option>
+            ))}
+          </select>
+        </div>
       </Navbarlogin>
 
       <nav
@@ -51,9 +101,7 @@ function LoginNavbar22() {
                 <li key={index} className={item.cName}>
                   <Link to={item.path} style={{ color: theme.color }}>
                     {item.icon}
-                    <span style={{ marginLeft: "5px", color: theme.color }}>
-                      {item.titile}
-                    </span>
+                    <span style={{ color: theme.color }}>{item.titile}</span>
                   </Link>
                 </li>
               </div>

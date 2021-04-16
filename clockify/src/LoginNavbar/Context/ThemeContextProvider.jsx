@@ -23,7 +23,8 @@ function ThemeContextProvider({ children }) {
   const value = {
     currentTheme,
     toogleTheme,
-    theme: themeValuese[currentTheme]
+    theme: themeValuese[currentTheme],
+    settheme
   };
   return (
     <Themecontext.Provider value={value}>{children}</Themecontext.Provider>
