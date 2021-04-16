@@ -55,14 +55,14 @@ function LoginNavbar22() {
           style={{ height: "30PX", marginTop: "3PX", marginLeft: "10px" }}
         />
         <SignbuttLogin
-          style={{ marginLeft: "64%", background: theme.bodyBackgroung }}
+          style={{ marginLeft: "64%", background: theme.bodyBackgroung, width: "70px" }}
         >
           Upgrade
         </SignbuttLogin>
         <BsFillBellFill
-          style={{ marginLeft: "20px", color: theme.color }}
+          style={{ marginLeft: "20px", color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none"}}
         ></BsFillBellFill>
-        <BsQuestionCircle style={{ marginLeft: "20px", color: theme.color }} />
+        <BsQuestionCircle style={{color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none" }} />
         <div style={{ marginLeft: "20px" }}></div>
         <img
           src="https://www.twenty10.org.au/wp-content/uploads/2018/06/avatar-1577909_640.png"

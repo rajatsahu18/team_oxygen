@@ -1,0 +1,48 @@
+.heading {
+    border: 1px solid #CCD7DD;
+    background: #E4EAEE;
+    color: grey;
+    margin-top: 2%;
+    margin-left: 18%;
+    margin-right: 1%;
+}
+
+.heading > h5 {
+    margin-left: 2%;
+}
+
+.clientDetails {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCD7DD;
+    margin-left: 18%;
+    margin-right: 1%;
+}
+
+.clientsData {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.buttonManagement {
+
+}
+
+h4 {
+    margin-left: 2%;
+}
+
+button {
+    border-left: 1px dotted #CCD7DD;
+    border-right: 1px dotted #CCD7DD;
+    border-top: none;
+    border-bottom: none;
+    width: 60px;
+    outline: none;
+    background: none;
+    height: 45px;
+    margin-top: 10px;
+    color: #CCD7DD;
+    cursor: pointer;
+}
