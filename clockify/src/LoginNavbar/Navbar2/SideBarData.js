@@ -66,3 +66,17 @@ export const SideBarData = [
     cName: "nav-text"
   }
 ];
+
+
+export const SideBarData22 = [
+  {
+    titile: "DARK",
+    icon: <BsClock />,
+    cName: "nav-text"
+  },
+  {
+    titile: "LOGOUT",
+    icon: <BsClock />,
+    cName: "nav-text"
+  }
+]

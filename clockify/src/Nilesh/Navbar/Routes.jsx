@@ -12,6 +12,7 @@ import { TimeTracker } from "../../Rajat/Components/ClockifyTimeTracker/TimeTrac
 import { LoginNavbar22 } from "../../LoginNavbar/Navbar2/LoginNavbar";
 import { Project } from "../../Rajat/Components/ClockifyProject/Project";
 import { Client } from "../../Rajat/Components/ClockifyClient/Client";
+import { Calender } from "../../LoginNavbar/Pages/CalenderL";
 
 function Routes() {
   return (
@@ -47,6 +48,10 @@ function Routes() {
         <Route path = "/clients/:id/:username">
           <LoginNavbar22/>
           <Client/>
+        </Route>
+        <Route path = "/calender/:id/:username">
+          <LoginNavbar22/>
+          <Calender/>
         </Route>
         <Route>
           <h3>ERROR 4040 NOT FOUND</h3>

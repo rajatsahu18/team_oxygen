@@ -1,56 +1,87 @@
+
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { VscThreeBars } from "react-icons/vsc";
 import { BsFillBellFill, BsQuestionCircle } from "react-icons/bs";
 
 import "./LoginNavbar.css";
-import { SideBarData } from "./SideBarData";
+import { SideBarData, SideBarData22 } from "./SideBarData";
 import { Navbarlogin, SignbuttLogin } from "./Navbar2css";
 import { Themecontext } from "../Context/ThemeContextProvider";
+import { BiUserCircle } from "react-icons/bi";
+
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { logoutSuccess } from "../../Pooran/Redux/Login/action";
 
 function LoginNavbar22() {
-  var obj12 = {
-    optionsd: ""
+
+  var obj1 = {
+
+    department: "",
+
+  };
+  const [query, setquery] = useState(obj1);
+  const [sidebar, setSidebar] = useState(true);
+
+  const { id, username } = useSelector(state => state.login, shallowEqual)
+  const { department } = query
+
+  const { theme, settheme } = useContext(Themecontext);
+
+  const dispatch = useDispatch()
+  const [sidebar2, setSidebar2] = useState(false);
+
+  const showsidebar2 = () => {
+    setSidebar2(!sidebar2);
   };
 
-  const [query, setquery] = useState(obj12);
-  const {id, username} = useSelector(state => state.login, shallowEqual)
-  const dispatch = useDispatch()
-  const { optionsd } = query;
 
   const handlechange = (e) => {
     const { name, value } = e.target;
 
     setquery({ ...query, [name]: value });
-  };
 
-  const [sidebar, setSidebar] = useState(true);
-  const { theme, toogleTheme } = useContext(Themecontext);
+
+
+
+    if (value == "dark") {
+      settheme(value)
+    }
+    else if (value == "logout") {
+
+      dispatch(logoutSuccess())
+    }
+
+
+  }
+
+
+
   const showsidebar = () => {
     setSidebar(!sidebar);
   };
 
+
+
   const depts = [
     {
-      value: "",
-      name: "Dark"
+      value: "DARK",
+      name: "dark"
     },
     {
       value: "LOGOUT",
-      name: "Logout"
-    }
-  ];
+      name: "logout"
+    },
+  ]
 
-  const handleLogout = () => {
-    dispatch(logoutSuccess())
-  }
+
+
 
   return (
     <div>
+
       <Navbarlogin
-        style={{ background: theme.bodyBackgroung, color: theme.color }}
+        style={{ backgroundColor: theme.bodyBackground, color: theme.color }}
       >
         <Link to="#" className="menu-bars">
           <VscThreeBars size="30px" onClick={showsidebar} />
@@ -60,44 +91,49 @@ function LoginNavbar22() {
           alt=""
           style={{ height: "30PX", marginTop: "3PX", marginLeft: "10px" }}
         />
-        <div style={{ marginLeft: "54%"}} >
+
+        <div style={{ marginLeft: "54%" }} >
           {`${username} workspace`}
         </div>
         <SignbuttLogin
           style={{ marginLeft: "10px", background: theme.bodyBackgroung, width: "80px" }}
         >
-          UPGRADE
+          Upgrade
         </SignbuttLogin>
         <BsFillBellFill
-          style={{ marginLeft: "20px", color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none"}}
+          style={{ marginLeft: "20px", color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none" }}
         ></BsFillBellFill>
-        <BsQuestionCircle style={{color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none" }} />
+        <BsQuestionCircle style={{ color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none" }} />
         <div style={{ marginLeft: "20px" }}></div>
-        <img
-          src="https://www.twenty10.org.au/wp-content/uploads/2018/06/avatar-1577909_640.png"
-          alt=""
-          style={{ height: "25px", borderRadius: "15px" }}
-        />
+
         <div style={{ marginLeft: "5px" }}>
-          <select
-            onClick={toogleTheme}
-            value={optionsd}
-            name="optionsd"
-            onChange={handlechange}
-          >
-            {depts.map((de) => (
-              <option key={de.value}>{de.name}</option>
-            ))}
-          </select>
+
+          <div>
+          </div>
+
+          <div style={{ display: "flex" }}>
+
+            < BiUserCircle size="30px" />
+            <select onChange={handlechange}>
+              <option disabled selected value>select an option</option>
+              {depts.map((de) => (
+                <option key={de.value}>{de.name}</option>
+              ))}
+            </select>
+
+
+          </div>
+
         </div>
       </Navbarlogin>
+
 
       <nav
         className={sidebar ? `nav-menu.active` : `nav-menu`}
         style={{
           border: "1px solid whitesmoke",
           width: "250px",
-          backgroundColor: theme.bodyBackgroung,
+          backgroundColor: theme.bodyBackground,
           color: theme.color,
           marginTop: "-1px"
         }}
@@ -108,7 +144,7 @@ function LoginNavbar22() {
               <div>
                 <h4 style={{ color: theme.color }}> {item.Head}</h4>
                 <li key={index} className={item.cName}>
-                  <Link to = {`${item.path}/${id}/${username}`} style={{ color: theme.color }}>
+                  <Link to={`${item.path}/${id}/${username}`} style={{ color: theme.color }}>
                     {item.icon}
                     <span style={{ color: theme.color }}>{item.titile}</span>
                   </Link>
@@ -118,8 +154,12 @@ function LoginNavbar22() {
           })}
         </ul>
       </nav>
+
+
+
     </div>
   );
 }
 
 export { LoginNavbar22 };
+
