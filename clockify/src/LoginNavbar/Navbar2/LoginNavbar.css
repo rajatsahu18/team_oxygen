@@ -52,3 +52,28 @@
 span {
     margin-left: 16px;
 }
+.menu-bars22 {
+  margin-left: 2 rem;
+  font-size: 2 rem;
+  color: #333333;
+}
+
+.nav-menu22 {
+  background-color: whitesmoke;
+  display: flex;
+  left: -100%;
+  position: fixed;
+  border: 0.1 px solid gray;
+  
+}
+
+
+.nav-text22 ui {
+  text-decoration: none;
+  color: #333333;
+}
+.nav-menu.active22 {
+  left: 30%;
+  transition: 350ms;
+  
+}
