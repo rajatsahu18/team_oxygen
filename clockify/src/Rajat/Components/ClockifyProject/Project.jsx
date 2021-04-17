@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react'
 import { ProjectWrapper, ProjectDataWrapper } from './ProjectStyles'
 import {FiSearch} from "react-icons/fi"
@@ -60,6 +61,13 @@ const Project = () => {
         };
 
     return loginAuth ? (
+import React from 'react'
+import { ProjectWrapper, ProjectDataWrapper } from './ProjectStyles'
+import {FiSearch} from "react-icons/fi"
+import styles from "./Project.module.css"
+
+const Project = () => {
+    return (
         <>
         <ProjectWrapper>
             <div>
@@ -90,11 +98,17 @@ const Project = () => {
                                     <button onClick={handleaddproject} >CREATE</button>
                                 </div>
                     </Modal>
+                <button>CREATE NEW PROJECT</button>
             </div>
             <div>
                 <h4>FILTER</h4>
                 <select>
                     <option value="active">Active</option>
+
+
+                    <option value="archieved">Archieved</option>
+                    <option value="all">All</option>
+
                 </select>
                 <select >
                     <option value="clients">Clients</option>
@@ -114,6 +128,7 @@ const Project = () => {
                 <input type="text" placeholder = "Project name" />
                 <button>APPLY FILTER</button>
             </div>
+
             <div className = {styles.heading}>
                 <h5>Projects</h5>
             </div>
@@ -141,6 +156,25 @@ const Project = () => {
         </ProjectWrapper>
         </>
     ) : <Redirect to = "/login" />
+
+        </ProjectWrapper>
+        
+            <div className = {styles.heading}>
+                <h5>Projects</h5>
+            </div>
+            <div className = {styles.projectDetails}>
+                <input type="checkbox"/>
+                <label >NAME</label>
+                <label className = {styles.projectLabel} >CLIENT</label>
+                <label className = {styles.projectLabel}>TRACKED</label>
+                <label className = {styles.projectLabel}>AMOUNT</label>
+                <label className = {styles.projectLabel}>PROGRESS</label>
+                <label className = {styles.projectLabel}>ACCESS</label>
+            </div>
+
+        </>
+    )
+
 }
 
 export { Project }

@@ -40,6 +40,13 @@
     margin-left: 73%;
 }
 
+    flex-direction: row;
+    
+}
+
+.buttonManagement {
+
+}
 
 h4 {
     margin-left: 2%;
@@ -57,6 +64,7 @@ button {
     margin-top: 10px;
     color: #CCD7DD;
     cursor: pointer;
+
 }
 
 .editModal {
@@ -147,4 +155,5 @@ button {
 
 .deleteModalButtons >  button:nth-child(2):hover {
     background: red;
+
 }

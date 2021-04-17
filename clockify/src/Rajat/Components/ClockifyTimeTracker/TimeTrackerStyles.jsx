@@ -7,17 +7,21 @@ export const TimeTrackerWrapper = styled.div`
     margin-top: -40%;
     margin-left: 18%;
     margin-right: 1%;
+    margin-top: -38%;
+    margin-left: 18%;
 
     input {
         border: 1px solid #CCD7DD;
         outline: #CCD7DD;
         height: 35px;
         width: 45%;
+        width: 55%;
         margin: 15px;
         padding-left: 10px;
     }
 
     div > button:nth-child(1) {
+    button:nth-child(2) {
         border: none;
         background: none;
         outline: none;
@@ -37,9 +41,16 @@ export const TimeTrackerWrapper = styled.div`
         margin-top: 23px;
     }
     
- 
     h3 {
         margin:20px 20px 20px 10px;
+        }
+    h2 {
+        color: #CCD7DD;
+        margin-left: 45px;
+    }
+
+    h3 {
+        margin:20px 20px 20px 15px;
         font-size: 25px;
     }
 
@@ -53,4 +64,6 @@ export const TimeTrackerWrapper = styled.div`
         font-size: 16px;
         cursor: pointer;
     }
+`
+    
 `
