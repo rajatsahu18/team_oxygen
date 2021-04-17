@@ -7,6 +7,8 @@ import "./LoginNavbar.css";
 import { SideBarData } from "./SideBarData";
 import { Navbarlogin, SignbuttLogin } from "./Navbar2css";
 import { Themecontext } from "../Context/ThemeContextProvider";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
+import { logoutSuccess } from "../../Pooran/Redux/Login/action";
 
 function LoginNavbar22() {
   var obj12 = {
@@ -14,7 +16,8 @@ function LoginNavbar22() {
   };
 
   const [query, setquery] = useState(obj12);
-
+  const {id, username} = useSelector(state => state.login, shallowEqual)
+  const dispatch = useDispatch()
   const { optionsd } = query;
 
   const handlechange = (e) => {
@@ -23,8 +26,7 @@ function LoginNavbar22() {
     setquery({ ...query, [name]: value });
   };
 
-  const [sidebar, setSidebar] = useState(false);
-
+  const [sidebar, setSidebar] = useState(true);
   const { theme, toogleTheme } = useContext(Themecontext);
   const showsidebar = () => {
     setSidebar(!sidebar);
@@ -41,6 +43,10 @@ function LoginNavbar22() {
     }
   ];
 
+  const handleLogout = () => {
+    dispatch(logoutSuccess())
+  }
+
   return (
     <div>
       <Navbarlogin
@@ -54,10 +60,14 @@ function LoginNavbar22() {
           alt=""
           style={{ height: "30PX", marginTop: "3PX", marginLeft: "10px" }}
         />
+        <div style={{ marginLeft: "54%"}} >
+          {`${username} workspace`}
+        </div>
         <SignbuttLogin
+          style={{ marginLeft: "10px", background: theme.bodyBackgroung, width: "80px" }}
           style={{ marginLeft: "64%", background: theme.bodyBackgroung, width: "70px" }}
         >
-          Upgrade
+          UPGRADE
         </SignbuttLogin>
         <BsFillBellFill
           style={{ marginLeft: "20px", color: theme.color, border: "1px dotted #CCD7DD", padding: "1%", borderTop: "none", borderBottom: "none"}}
@@ -99,7 +109,7 @@ function LoginNavbar22() {
               <div>
                 <h4 style={{ color: theme.color }}> {item.Head}</h4>
                 <li key={index} className={item.cName}>
-                  <Link to={item.path} style={{ color: theme.color }}>
+                  <Link to = {`${item.path}/${id}/${username}`} style={{ color: theme.color }}>
                     {item.icon}
                     <span style={{ color: theme.color }}>{item.titile}</span>
                   </Link>

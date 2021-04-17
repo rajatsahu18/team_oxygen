@@ -1,8 +1,8 @@
 import React from 'react';
 import { Loginformdiv, LoginNavdiv, LoginNavdivLogoDiv } from './Logincss';
-import { Link } from "react-router-dom"
+import { Link, Redirect } from "react-router-dom"
 import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { loginuser } from '../../Redux/Login/action';
 import { Loader } from '../Loader/Loader';
 
@@ -15,7 +15,7 @@ const logininput = {
 export const LoginPage = () => {
 const [query,setquery] = React.useState(logininput);
 const dispatch = useDispatch();
-const {loginLoading} = useSelector(state=>state.login)
+const {loginLoading, loginAuth, id, username } = useSelector(state=>state.login, shallowEqual)
 const handlechangelogin = (e)=>{
     const {name,value,type,checked} = e.target;
     let val = type === "checkbox" ? checked : value;
@@ -48,7 +48,7 @@ const handlelogin = ()=>{
 if(loginLoading){
     return <Loader/>
 }
-    return (
+    return !loginAuth ? (
         <>
             <LoginNavdiv>
                 <LoginNavdivLogoDiv>
@@ -107,6 +107,6 @@ if(loginLoading){
                 </div>
             </Loginformdiv>
         </>
-    )
+    ) : <Redirect to = {`/timetracker/${id}/${username}`} />
 }
 

@@ -4,6 +4,9 @@ export const TimeTrackerWrapper = styled.div`
     display: flex;
     border: 1px solid #CCD7DD;
     height: 70px;
+    margin-top: -40%;
+    margin-left: 18%;
+    margin-right: 1%;
     margin-top: -38%;
     margin-left: 18%;
 
@@ -11,11 +14,13 @@ export const TimeTrackerWrapper = styled.div`
         border: 1px solid #CCD7DD;
         outline: #CCD7DD;
         height: 35px;
+        width: 45%;
         width: 55%;
         margin: 15px;
         padding-left: 10px;
     }
 
+    div > button:nth-child(1) {
     button:nth-child(2) {
         border: none;
         background: none;
@@ -24,6 +29,21 @@ export const TimeTrackerWrapper = styled.div`
         cursor: pointer;
     }
 
+    div > select:nth-child(1) {
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
+    }
+
+    h2 {
+        color: #CCD7DD;
+        margin-left: 30px;
+        margin-top: 23px;
+    }
+    
+    h3 {
+        margin:20px 20px 20px 10px;
+        }
     h2 {
         color: #CCD7DD;
         margin-left: 45px;
@@ -44,5 +64,6 @@ export const TimeTrackerWrapper = styled.div`
         font-size: 16px;
         cursor: pointer;
     }
+`
     
 `

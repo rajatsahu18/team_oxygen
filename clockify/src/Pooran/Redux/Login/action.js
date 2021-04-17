@@ -1,9 +1,6 @@
 import axios from "axios";
 import { Savelocaldata } from "../../Utils/localstorage";
-import { LOGIN_FAILED, LOGIN_REQUEST, LOGIN_SUCCESS } from "./actiontype";
-
-
-
+import { LOGIN_FAILED, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_SUCCESS } from "./actiontype";
 
 export const loginsuccess = (payload)=>({
  type:LOGIN_SUCCESS,
@@ -53,3 +50,9 @@ export const loginuser = (payload)=>(dispatch)=>{
         dispatch(loginfailed());
     })
 }
+
+export const logoutSuccess = () => (
+    {
+        type: LOGOUT_SUCCESS
+    }
+)
