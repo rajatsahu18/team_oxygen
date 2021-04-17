@@ -4,10 +4,6 @@
     color: grey;
     height: 35px;
     margin-top: 2%;
-
-    margin-left: 18%;
-    margin-right: 1%;
-
 }
 
 .heading > h5 {
@@ -18,26 +14,17 @@
 .projectDetails {
     display: flex;
     border: 1px solid #CCD7DD;
-
     padding: 15px;
 }
 
 .projectLabel {
     margin-left: 16%;
-    margin-left: 18%;
-    padding: 15px;
-    margin-right: 1%;
-}
-
-.projectLabel {
-    margin-left: 10%;
 }
 
 label {
     font-size: 12px;
     margin-top: 2px;
     color: grey;
-
 }
 
 /* CSS for projects data after mapping */
@@ -124,4 +111,6 @@ table{
     height: 35px;
     outline: none;
 }
-}
+
+
+

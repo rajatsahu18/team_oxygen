@@ -65,7 +65,6 @@ function LoginNavbar22() {
         </div>
         <SignbuttLogin
           style={{ marginLeft: "10px", background: theme.bodyBackgroung, width: "80px" }}
-          style={{ marginLeft: "64%", background: theme.bodyBackgroung, width: "70px" }}
         >
           UPGRADE
         </SignbuttLogin>
