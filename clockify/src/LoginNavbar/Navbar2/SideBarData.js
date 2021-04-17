@@ -7,6 +7,7 @@ import { IoPricetagsOutline } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { CgNotes } from "react-icons/cg";
 
+
 export const SideBarData = [
   {
     titile: "TIME TRACKER",
@@ -54,13 +55,13 @@ export const SideBarData = [
   },
   {
     titile: "TAGS",
-    path: "/tags",
+    path: "/tags/:id/:username",
     icon: <IoPricetagsOutline />,
     cName: "nav-text"
   },
   {
     titile: "SETTING",
-    path: "/setting",
+    path: "/setting/:id/:username",
     icon: <FiSettings />,
     cName: "nav-text"
   }

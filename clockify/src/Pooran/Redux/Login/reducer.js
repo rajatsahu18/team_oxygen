@@ -1,6 +1,6 @@
 import { act } from "react-dom/test-utils"
 import { Getlocaldata, Savelocaldata } from "../../Utils/localstorage";
-import { LOGIN_FAILED, LOGIN_REQUEST, LOGIN_SUCCESS } from "./actiontype";
+import { LOGIN_FAILED, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_SUCCESS } from "./actiontype";
 
 const logindata = Getlocaldata("account");
 
@@ -41,6 +41,11 @@ export const loginReducer = (state = loginstate, action) => {
                 ...state,
                 loginLoading: true
             };
+        case LOGOUT_SUCCESS:
+            return {
+                ...state,
+                loginAuth: false
+            }
         default:
             return state
     }
