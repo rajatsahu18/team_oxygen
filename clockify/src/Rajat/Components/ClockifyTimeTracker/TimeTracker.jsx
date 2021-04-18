@@ -289,8 +289,8 @@ export const TimeTracker = () => {
                             <h3 className = {styles.endTime}>{`${el.endhour}:${el.endmin}`}</h3>
                             <h2 className = {styles.calender}><FaRegCalendarAlt/></h2>
                             <h2 className = {styles.totalTime} >{`${el.hour}:${el.min}:${el.sec}`}</h2>
-                            <button className = {styles.timerButton} value={JSON.stringify(dataobjex)} onClick={handlestartdescriptionagain} >START</button>
-                            <button className = {styles.deleteButton} value={JSON.stringify(dataobjex)} onClick={handledeletedescription}>DELETE</button>
+                            <button className = {styles.timerButton} value={JSON.stringify(dataobjex)} onClick={handlestartdescriptionagain} ><img src= {`https://www.vippng.com/png/detail/173-1730359_right-side-triangle-arrow-grey-color-composite-material.png`} alt="Image"/></button>
+                            <button className = {styles.deleteButton} value={JSON.stringify(dataobjex)} onClick={handledeletedescription}> <img src= {`https://t4.ftcdn.net/jpg/00/98/26/11/240_F_98261175_Sv69O3rZsHApYkjAdrWbgQixYHwyZyOr.jpg`} alt="Image"/> </button>
                         </div>
                     );
                     });

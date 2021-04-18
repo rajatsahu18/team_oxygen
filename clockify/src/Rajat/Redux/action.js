@@ -29,7 +29,7 @@ export const editClientFailure = () => {
 
 export const editClients = () => dispatch => {
     dispatch(editClientRequest())
-    return axios.patch("")
+    return axios.patch(`https://json-server-mocker-pooran.herokuapp.com/userdata/${id}`)
     .then(res => {
         dispatch(editClientSuccess(res.data))
         console.log(res.data)

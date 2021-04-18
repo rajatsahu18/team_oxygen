@@ -81,7 +81,9 @@ export const Client = () => {
             <div className = {styles.clientDetails}>
                 {data && data.map((item) => (
                     <div className = {styles.clientsName}>
-                        <div><h4>{item}</h4></div>
+                        <div>
+                            <h4>{item}</h4>
+                        </div>
                         <div>
 
                             {/* Edit Modal */}
@@ -113,9 +115,7 @@ export const Client = () => {
                                     <button  onClick = {() => setDeleteModalIsOpen(false)} >Cancel</button>
                                     <button >DELETE</button>
                                 </div>
-                            </Modal>
-
-                            
+                            </Modal>              
                         </div>   
                     </div>                  
                 ))}              

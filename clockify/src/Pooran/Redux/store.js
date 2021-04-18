@@ -4,12 +4,11 @@ import thunk from "redux-thunk"
 import { loginReducer } from "./Login/reducer";
 import { timetrackReducer } from "./Getdata/reducer";
 
-
-
 var rootReducer = combineReducers({
  signup:signUpReducer,
  login:loginReducer,
  getdata:timetrackReducer,
+
 });
  export const store = createStore(rootReducer,compose(
     applyMiddleware(thunk),

@@ -21,6 +21,17 @@
     margin-left: 16%;
 }
 
+.clientsLabel {
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 1%;
+}
+
+.progressLabel {
+    width: 20%;
+    margin-left: 9%;
+}
+
 label {
     font-size: 12px;
     margin-top: 2px;
@@ -31,34 +42,33 @@ label {
 
 .projectDataDetails {
     border: 1px solid #CCD7DD;
+    display: flex;
+    color: grey;
 }
 
-.clientsLabel {
-    width: 20%;
-    margin-left: 9%;
-    margin-right: 1%;
+.projectsDetails {
+    width: 13%;
 }
 
-.progressLabel {
-    width: 20%;
-    margin-left: 4%;
-    margin-right: 2%;
+.clientsDetails {
+    width: 13%;
+    margin-left: 10%;
+}
+
+.projectDataDetails > h4:nth-child(3) {
+    margin-left: 7%;
+}
+
+.projectDataDetails > h4:nth-child(4) {
+    margin-left: 10%;
+}
+
+.projectDataDetails > h4:nth-child(5) {
+    margin-left: 17%;
 }
 
 .favouriteButton {
-    margin-left: 60%;
-}
-
-table, td{
-    border-collapse: collapse;
-    width: 15%;
-    text-align: center;
-}
-
-table{
-    border: 1px solid #CCD7DD;
-    width:100%;
-    border-collapse: collapse;
+    margin-left: 7.9%;
 }
 
 /* Project Modal css */

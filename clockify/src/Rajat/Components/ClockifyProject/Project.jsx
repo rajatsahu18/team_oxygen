@@ -128,15 +128,15 @@ const Project = () => {
             
             
             {projects && projects.map((item) => {
-                return <table className = {styles.projectDataDetails} key = {item.title}>
-                            <td >{item.title}</td>
-                            <td > {item.clients} </td>
-                            <td >0.00 USD</td>
-                            <td >-</td>
-                            <td >Public</td>
+                return <div className = {styles.projectDataDetails} key = {item.title}>
+                            <h4  className = {styles.projectsDetails}>{item.title}</h4>
+                            <h4  className = {styles.clientsDetails}> {item.clients} </h4>
+                            <h4 >0.00 USD</h4>
+                            <h4 >-</h4>
+                            <h4 >Public</h4>
                         <button  className = {styles.favouriteButton} ><BsStar size = "20px"/></button>
-                        <button  ><BsThreeDotsVertical size = "25px"/></button>
-                    </table>
+                        <button><BsThreeDotsVertical size = "25px"/></button>
+                    </div>
                 })}
         </ProjectWrapper>
         </>

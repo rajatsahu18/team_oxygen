@@ -1,8 +1,4 @@
 import React from 'react'
-
-
-
-
 import { Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Schedule } from "@syncfusion/ej2-react-schedule"
 export const Calender = () => {
     return ( 

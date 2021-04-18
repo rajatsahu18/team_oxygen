@@ -1,3 +1,5 @@
+/* Css for client data after adding clients */
+
 .heading {
     border: 1px solid #CCD7DD;
     background: #E4EAEE;
@@ -59,6 +61,8 @@ button {
     cursor: pointer;
 }
 
+/* Css for clients edit modal */
+
 .editModal {
     height: 250px;
     width: 30%;
@@ -103,6 +107,8 @@ button {
     color: white;
     margin-left: 6%;
 }
+
+/* Css for clients delete modal */
 
 .deleteModal {
     height: 250px;
