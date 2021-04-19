@@ -14,11 +14,11 @@
 
 ![Screenshot (2646)](https://user-images.githubusercontent.com/61904192/115172711-7243d300-a0e3-11eb-9868-ba74e61c2784.png)
 
-#### 2.  Click on the signup button to create a new account if you don't have one. You cant't create an account with same email address.
+#### 2.  Click on the signup button to create a new account if you don't have one. You can't create an account with same email address.
 ![Screenshot (2647)](https://user-images.githubusercontent.com/61904192/115172781-9acbcd00-a0e3-11eb-94fe-57620d042213.png)
 
 ![Screenshot (2649)](https://user-images.githubusercontent.com/61904192/115172910-cd75c580-a0e3-11eb-9981-a38e26c67d7f.png)
-#### 3.  Enter the valid email and password and choose stay login. This will help you to login the website without entering the details from the next time.Click login button. We are storing the account details in local storage.
+#### 3.  Enter the valid email and password and choose stay login. This will help you to login the website without entering the details from the next time. Click login button. We are storing the account details in local storage.
 ![Screen shot (2650)](https://user-images.githubusercontent.com/61904192/115172805-a15a4480-a0e3-11eb-9b5a-244dae873dd7.png)
 ![Screenshot (2666)](https://user-images.githubusercontent.com/61904192/115173448-f21e6d00-a0e4-11eb-9413-9c9541d100c5.png)
 
