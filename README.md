@@ -1,7 +1,7 @@
 # Clockify Clone
 #### Clockify is a simple time tracker and timesheet app that lets you and your team track work hours across projects.
 # Technologies Used
-..* React
+* React
 * Redux thunks
 * Mock server
 # Steps to browse the project:
