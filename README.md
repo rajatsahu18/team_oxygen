@@ -13,6 +13,20 @@
 * Slack
 * Zoom
 
+# Libraries Used
+* react
+* react-dom
+* react-router-dom
+* axio
+* uuid
+* react-icons
+* react-redux
+* redux
+* redux-thunk
+* react-modal
+* styled-components
+* @syncfusion/ej2-react-schedule
+
 # Steps to browse the project:
 #### 1.  Start the app in your VS code with command npm start.
 ![Screenshot (2643)](https://user-images.githubusercontent.com/61904192/115172600-37419f80-a0e3-11eb-9921-e7a67bb123af.png)
