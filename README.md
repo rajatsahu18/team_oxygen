@@ -50,7 +50,7 @@
 
 ![Screenshot (2665)](https://user-images.githubusercontent.com/61904192/115173362-c7341900-a0e4-11eb-9744-3f1bc8840f89.png)
 
-#### So this was our project we have created with our efforts. Wehave added the screensots for our audience to understand easily.
+#### So this was our project we have created with our efforts. We have added the screensots for our audience to understand easily.
 
 # Team members and contributors
 ## Rajat Sahu 
