@@ -66,6 +66,7 @@ const TextWrapper = styled.div`
         color: #03A9F4;
         background: white;
         font-size: 19px;
+        margin-left: 1%;
     }
 
     div:nth-child(3) > button:hover {
@@ -75,7 +76,6 @@ const TextWrapper = styled.div`
     span {
         visibility: hidden;
         width: 180px;
-        
         background: black;
         color: white;
         text-align: left;
@@ -92,7 +92,8 @@ const TextWrapper = styled.div`
     }
 
     div:nth-child(4) > button {
-        margin: 1.5% 4px 4px 4px;
+        margin: 1.5% 4px 4px 0.5%;
+        width: 8%;
         border: none;
         outline: none;
         height: 25px;
@@ -101,7 +102,8 @@ const TextWrapper = styled.div`
     }
 
     div:nth-child(5) > button {
-        margin: 3px 4px 5% 4px;
+        margin: 3px 4px 5% 0.5%;
+        width: 7.5%;
         border: none;
          outline: none;
         height: 25px;
