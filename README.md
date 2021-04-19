@@ -3,7 +3,16 @@
 # Technologies Used
 * React
 * Redux thunks
-* Mock server
+
+# Tools 
+* VS Code
+* Github
+* Mock Server API's
+
+# Tools for communication
+* Slack
+* Zoom
+
 # Steps to browse the project:
 #### 1.  Start the app in your VS code with command npm start.
 ![Screenshot (2643)](https://user-images.githubusercontent.com/61904192/115172600-37419f80-a0e3-11eb-9921-e7a67bb123af.png)
