@@ -40,7 +40,7 @@
 
 ![Screenshot (2659)](https://user-images.githubusercontent.com/61904192/115173206-69073600-a0e4-11eb-9728-b783f0fa0be3.png)
 
-#### 11. Go to client page, here you can add a new client here.
+#### 11. Go to client page, you can add a new client here.
 ![Screenshot (2661)](https://user-images.githubusercontent.com/61904192/115173240-78867f00-a0e4-11eb-8b86-dd6e01db0d04.png)
 
 ![Screenshot (2662)](https://user-images.githubusercontent.com/61904192/115173254-83d9aa80-a0e4-11eb-9693-afaeddc18ca2.png)
