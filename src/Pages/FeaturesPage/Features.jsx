@@ -3,11 +3,11 @@ import { AppAlignment } from '../../HomePageMain/Navbar/Navbarcss'
 import { FeaturesData } from './FeaturesData'
 
 const Features = () => {
-    return (
-        <AppAlignment>
-            <FeaturesData/>
-        </AppAlignment>
-    )
-}
+  return (
+    <AppAlignment>
+      <FeaturesData />
+    </AppAlignment>
+  );
+};
 
-export { Features }
+export { Features };
