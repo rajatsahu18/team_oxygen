@@ -1,8 +1,8 @@
 # Clockify Clone
 ### Clockify is a simple time tracker and timesheet app that lets you and your team track work hours across projects.
 # Technologies Used
-* React
-* Redux thunks
+* React[https://reactjs.org/]
+* Redux thunks[https://www.npmjs.com/package/redux-thunk]
 
 # Tools 
 * VS Code
@@ -14,18 +14,18 @@
 * Zoom
 
 # Libraries Used
-* react
-* react-dom
-* react-router-dom
-* axio
-* uuid
-* react-icons
-* react-redux
-* redux
-* redux-thunk
-* react-modal
-* styled-components
-* @syncfusion/ej2-react-schedule
+* [react](https://reactjs.org/)
+* [react-dom](https://www.npmjs.com/package/react-dom)
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+* [axios](https://www.npmjs.com/package/axios)
+* [uuid](https://www.npmjs.com/package/uuid)
+* [react-icons](https://react-icons.github.io/react-icons/)
+* [react-redux](https://www.npmjs.com/package/react-redux)
+* [redux](https://www.npmjs.com/package/redux)
+* [redux-thunk](https://www.npmjs.com/package/redux-thunk)
+* [react-modal](https://www.npmjs.com/package/react-modal)
+* [styled-components](https://www.npmjs.com/package/styled-components)
+* [@syncfusion/ej2-react-schedule](https://www.npmjs.com/package/@syncfusion/ej2-react-schedule)
 
 # Steps to browse the project:
 #### 1.  Start the app in your VS code with command npm start.
