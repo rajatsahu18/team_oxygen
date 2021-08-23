@@ -11,7 +11,7 @@ function SeventhPart1() {
 
   const getdata = () => {
     axios
-      .get(`http://localhost:3005/Todo2`)
+      .get(`https://json-server-projects.herokuapp.com/feedback`)
       .then((res) => {
         console.log(res);
 
